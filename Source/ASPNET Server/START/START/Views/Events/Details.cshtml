@@ -1,0 +1,66 @@
+﻿@model START.Models.Event
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Event</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IncidentDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IncidentDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IncidentTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IncidentTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IPAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IPAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstResponder)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstResponder)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmergencyType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmergencyType)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
